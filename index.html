@@ -14,7 +14,7 @@
         <h2>Please select the number of dogs you'd like displayed below(1-50)</h2>
         <form action="" id="num-form">
             <label for="num">Number of Dogs</label>
-            <input type="number" name="num" id="num" value="3" min="1" max="50" >
+            <input type="number" name="num" id="num" value="3" min="1" max="50" required
             <input type="submit" id="submit-button" value="SUBMIT">
         </form>
         <h3>Or search for a specific breed below(choose 1 breed)</h3>
@@ -23,7 +23,7 @@
             <input type="text" name="breed" id="breed" placeholder="ie: hound, poodle">
             <input type="submit" id="breed-submit" value="SUBMIT">
         </form>
-        <div id="results">
+        <div id="results" class="hidden">
 
         </div>
     </main>  

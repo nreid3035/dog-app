@@ -36,6 +36,8 @@ function fetchBreed(chosenBreed) {
       .catch(error => console.log(error))
 }
 
+
+
 function displayBreed(responseJson) {
     let randomIdx = Math.floor(Math.random() * responseJson.message.length)
     console.log(randomIdx);
@@ -44,6 +46,7 @@ function displayBreed(responseJson) {
     <div class="img-container">
       <img src="${responseJson.message[randomIdx]}" alt="dog-breed-pic"
     </div>`)
+    $('#results').removeClass('hidden')
 }
 
 
